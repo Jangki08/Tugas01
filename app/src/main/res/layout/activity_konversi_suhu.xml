@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KonversiSuhu"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00BCD4"
+        android:text="Konversi Suhu"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/suhu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/item"
+            android:text="@string/asal"
+            android:textSize="15sp"
+            android:layout_marginLeft="71dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/item"/>
+
+        <Spinner
+            android:id="@+id/spin1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:prompt="@string/asal"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/item"
+            android:text="@string/tujuan"
+            android:textSize="15sp"
+            android:layout_marginLeft="54dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/item"/>
+
+        <Spinner
+            android:id="@+id/spin2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:prompt="@string/asal"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/item"
+            android:text="Suhu Inputan"
+            android:textSize="15sp"
+            android:layout_marginLeft="49dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/item"/>
+
+        <EditText
+            android:id="@+id/ainput"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Text field"
+            android:inputType="number"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/item"
+            android:text="Suhu Konversi"
+            android:textSize="15sp"
+            android:layout_marginLeft="42dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/item"/>
+
+        <TextView
+            android:id="@+id/akonversi"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="15sp"
+            android:textColor="@color/item"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/btnHitung"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Hitung Konversi"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="90dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@drawable/botton"/>
+
+    </LinearLayout>
+
+</LinearLayout>

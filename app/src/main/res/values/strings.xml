@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tugas01</string>
+
+    <string name="judul">Asal Sekolah</string>
+    <string-array name="list_sekolah">
+        <item>Pesantren</item>
+        <item>SMK</item>
+        <item>SMA</item>
+        <item>SMP</item>
+        <item>SD</item>
+        <item>Ngga Sekolah</item>
+    </string-array>
+
+    <string name="asal">Suhu Asal</string>
+    <string name="tujuan">Suhu Tujuan</string>
+</resources>

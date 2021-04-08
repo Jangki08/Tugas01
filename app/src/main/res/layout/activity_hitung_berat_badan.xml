@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HitungBeratBadan"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00BCD4"
+        android:text="Hitung Berat Badan Ideal anda !"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="115dp"
+        android:layout_height="91dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/timbangan" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/item"
+            android:text="Nama"
+            android:textSize="15sp"
+            android:layout_marginLeft="83dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/item"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Text field"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/item"
+            android:text="Asal Sekolah"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/item"/>
+
+        <Spinner
+            android:id="@+id/spin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/list_sekolah"
+            android:prompt="@string/judul"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/item"
+            android:text="Umur"
+            android:textSize="15sp"
+            android:layout_marginLeft="87dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/item"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Text field"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/item"
+            android:text="Berat Badan"
+            android:textSize="15sp"
+            android:layout_marginLeft="36dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/item"/>
+
+        <EditText
+            android:id="@+id/cberat"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Text field"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/item"
+            android:text="Tinggi Badan"
+            android:textSize="15sp"
+            android:layout_marginLeft="28dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/item"/>
+
+        <EditText
+            android:id="@+id/ctinggi"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Text field"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnHitung"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Hitung"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="90dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@drawable/botton"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Hasil Perhitungan Berat Badan !!!"
+         android:textSize="15sp"
+         android:textColor="@color/item"
+         android:textAlignment="center"/>
+
+      <TextView
+          android:id="@+id/chasil"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="15sp"
+          android:textColor="@color/item"
+          android:textAlignment="center"/>
+
+      <TextView
+          android:id="@+id/cket"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="15sp"
+          android:textColor="@color/item"
+          android:textAlignment="center"/>
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="360dp"
+            android:layout_height="5dp"
+            android:visibility="visible"
+            android:background="@color/item"
+            android:layout_marginTop="20dp"/>
+
+</LinearLayout>
